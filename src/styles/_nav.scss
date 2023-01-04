@@ -1,0 +1,20 @@
+nav {
+  min-height: 3rem;
+  display: flex;
+  padding: 1rem 3rem;
+
+  button {
+    all: unset;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    padding: 1rem;
+    position: absolute;
+    right: 3rem;
+    cursor: pointer;
+    word-spacing: 1rem;
+  }
+
+  button:hover {
+    background: rgb(233, 196, 141);
+    border: 1px solid rgb(204, 172, 125);
+  }
+}

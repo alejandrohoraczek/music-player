@@ -1,0 +1,75 @@
+.library {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: min(25vw, 20rem);
+  height: 100%;
+  background-color: lightblue;
+  box-shadow: 2px 2px 50px lightblue;
+  overflow-y: scroll;
+  transform: translateX(-100%);
+
+  h2 {
+    padding: 2rem 0 1rem 1rem;
+    font-size: 1.7rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+}
+
+.library-songs {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  padding: 1rem 0rem;
+
+  img {
+    width: 25%;
+  }
+}
+
+.library-song {
+  color: rgb(131, 131, 131);
+  font-weight: 200;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  padding: 1rem 1rem;
+  cursor: pointer;
+  &:hover {
+    background: rgb(141, 210, 233);
+  }
+}
+
+.song-description {
+  padding-left: 0.5rem;
+  h3 {
+    font-size: 1.2rem;
+  }
+  h4 {
+    font-size: 0.9rem;
+  }
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgb(233, 196, 141);
+}
+
+*::-webkit-scrollbar {
+  width: 5px;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: rgb(233, 196, 141);
+  border-radius: 20px;
+  border: transparent;
+}
+
+.selected {
+  background-color: rgb(233, 196, 141);
+}
